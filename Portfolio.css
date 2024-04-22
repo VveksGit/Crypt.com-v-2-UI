@@ -1,0 +1,377 @@
+
+.Portfolio{
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+}
+.Portfolio .Portfolio-Header{
+  flex: 0 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Portfolio-Header p{
+  font-size: 25px;
+  font-weight: 400;
+  margin-left: 30px;
+}
+.Portfolio-Header span{
+  font-size: 16px;
+  font-weight: 400;
+  color: wheat;
+}
+.Portfolio-Header .next{
+  margin-right: 30px;
+  display: flex;
+}
+.next p{
+  font-size: 25px;
+  background-color: rgba(96, 94, 94, 0.25);
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.next p:hover{
+  background-color: rgba(96, 94, 94, 0.65);
+}
+
+.Portfolio .Portfolio-Below{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.Portfolio-Below .Card-Stuff{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Portfolio-Below .Portfolio-Holdings{
+  flex: 1;
+}
+.Portfolio-Below .Card-Stuff .Balance-Card{
+  background: linear-gradient(60deg,#999c9c, #d9dcdc);
+  width: 250px;
+  height: 150px;
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 40px;
+  border-radius: 20px;
+}
+.Balance-Card .Current-Balance{
+  font-size: 11px;
+  font-weight: 500;
+  color: black;
+}
+.Balance-Card .Balance{
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 28px;
+  font-weight: 700;
+  color: black;
+}
+.Balance-Card .Profite{
+  font-size: 12px;
+  color: green;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.10);
+  width: 80px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  margin-left: 80px;
+  cursor: pointer;
+}
+.Card-Stuff .buttons{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+.buttons .Send-Rec{
+  display: flex;
+}
+.Send-Rec p{
+  margin-right: 20px;
+  background-color: rgb(128, 128, 128, 0.25);
+  font-size: 10px;
+  font-weight: 600;
+  width: 70px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.Send-Rec p:hover{
+  background-color: rgb(22, 22, 22, 0.45);
+
+}
+.Send-Rec span{
+  font-size: 13px;
+  margin-right: 6px;
+}
+.buttons i{
+  background-color: rgb(128, 128, 128, 0.25);
+  width: 35px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+
+}
+.buttons i:hover{
+  background-color: rgb(22, 22, 22, 0.45);
+}
+.Card-Stuff .Success-Rate{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(128, 128, 128, 0.25);
+  margin-top: 20px;
+  width: 250px;
+  height: 130px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+.Success-Rate .High-Feed{
+  display: flex;
+  align-items: center;
+}
+.High-Feed p{
+  font-size: 10px;
+  font-weight: 600;
+  margin-right: 10px;
+  color: black;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.High-Feed .High{
+  background-color: rgb(204, 245, 204);
+  width: 60px;
+}
+.High-Feed .Feed{
+  background-color: rgb(255, 212, 219);
+  width: 50px;
+}
+.High-Feed i{
+  margin-left: 80px;
+  font-size: 14px;
+}
+.Success-Rate .Today{
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.Today p{
+  font-size: 10px;
+  font-weight: 600;
+  color: rgb(200, 192, 192);
+}
+.Today .today{
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+.Success-Rate .Bar{
+  display: flex;
+  align-items: center;
+}
+.Bar .bar{
+  width: 180px;
+  background: linear-gradient(to right, red 30%, grey 24%);
+  margin-right: 15px;
+  height: 10px;
+  border-radius: 5px;
+  color: transparent;
+}
+.Bar p{
+  font-size: 14px;
+  font-weight: 600;
+}
+.Portfolio-Holdings .Portfolio-Heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.Portfolio-Heading p{
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 35px;
+}
+.Portfolio-Heading i{
+  font-size: 20px;
+  margin-right: 40px;
+}
+.Portfolio-Holdings .Btc,
+.Portfolio-Holdings .Eth,
+.Portfolio-Holdings .Mon,
+.Portfolio-Holdings .Lite{
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  border-bottom-color: rgb(128, 128, 128, 0.10);
+  border-bottom-style: solid;
+  padding-bottom: 15px;
+  border-bottom-width: 2px;
+  margin-top: 25px;
+}
+.Btc i,
+.Eth i,
+.Mon i,
+.Lite i{
+  margin-right: 20px;
+  font-size: 18px;
+  background-color: rgb(128, 128, 128, 0.25);
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Btc p,
+.Eth p,
+.Mon p,
+.Lite p{
+  margin-right: 20px;
+  font-size: 20px;
+  color: rgb(239, 103, 103);
+  font-weight: 600;
+}
+.Eth p{
+  color: lightgreen;
+  margin-left: 6px;
+}
+.Mon p{
+  color: lightgreen;
+  margin-left: 8px;
+}
+.Btc p{
+  color:lightgreen;
+  margin-left: 3px;
+}
+.Lite p{
+  margin-left: 10px;
+}
+.Btc .price p,
+.Eth .price p,
+.Mon .price p,
+.Lite .price p{
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+
+.Btc .price .bit-price,
+.Eth .price .bit-price,
+.Mon .price .bit-price,
+.Lite .price .bit-price{
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+.Eth .price .bit-price{
+  font-size: 11px;
+}
+
+
+
+@media (max-width:600px){
+  .Portfolio{
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px){
+  .Portfolio .Portfolio-Below{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-left: -60px;
+  }
+  .Portfolio-Below .Card-Stuff{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Portfolio-Below .Portfolio-Holdings{
+    flex: 1;
+  }
+  .Portfolio .Portfolio-Header{
+    flex: 0 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  .Portfolio-Header p{
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: -20px;
+    margin-right: 60px;
+  }
+  .next p{
+    margin-right: 30px;
+  }
+}
+@media (min-width:768px) and (max-width: 900px){
+
+  .Portfolio .Portfolio-Below{
+    display: flex;
+    flex-direction: row;
+  }
+  .Portfolio-Below .Card-Stuff{
+    margin-left: -80px;
+  }
+  .Portfolio-Below .Portfolio-Holdings{
+    margin-right: 50px;
+  }
+  .Portfolio .Portfolio-Header{
+    justify-content: left;
+    padding-top: 10px;
+  }
+  .Portfolio-Header p{
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: -20px;
+    margin-right: 60px;
+  }
+  .next p{
+    margin-right: 30px;
+  }
+  
+}
+@media (min-width: 901px) and (max-width:1200px){
+  .Portfolio{
+    padding-left: 0px;
+  }
+  .Portfolio .Portfolio-Header{
+    flex: 0 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Portfolio .Portfolio-Below{
+    display: flex;
+    flex-direction: column;
+  }
+}

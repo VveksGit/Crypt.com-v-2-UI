@@ -1,0 +1,103 @@
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: "Onest", sans-serif;
+}
+body{
+  background-color: black;
+}
+
+  
+.container{
+  display: flex;
+}
+.Sidebar{
+  flex: 0 0 80px;
+  background-color: black;
+  height: 100vh;
+}
+
+.Right-Side{
+  flex: 1;
+  display: flex;
+}
+.Right-Side .Portfolio{
+  flex: 0 0 380px;
+}
+.Right-Side .Statistics{
+  flex: 1;
+}
+
+
+
+
+@media (max-width: 400px){
+  
+  .Right-Side{
+    flex-direction: column;
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 600px){
+  .Sidebar{
+    flex: 0 0 40px;
+    height: 60vh;
+  }
+  .Right-Side{
+    flex-direction: column;
+    padding-left: 40px;
+  }
+  .Statistics{
+    order: -1;
+    flex: 1;
+  }
+  .Portfolio{
+    flex: 0 0 600px;
+    background-color: blue;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 767px){
+  .Sidebar{
+    flex: 0 0 80px;
+    height: 55vh;
+  }
+  .Right-Side{
+    flex-direction: column;
+    padding-left: 40px;
+  }
+  .Statistics{
+    order: -1;
+    flex: 1;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width:900px){
+  .Sidebar{
+    flex: 0 0 80px;
+    height: 55vh;
+  }
+  .Right-Side{
+    flex-direction: column;
+    padding-left: 50px;
+  }
+  .Statistics{
+    order: -1;
+    flex: 1;
+  }
+}
+@media (min-width: 901px) and (max-width:1200px){
+  .Right-Side{
+    flex-direction: row;
+    padding-left: 50px;
+  }
+  .Statistics{
+    order: 1;
+    flex: 1;
+  }
+}
